@@ -1,0 +1,29 @@
+<script>
+
+
+    function printNumberWithOptions(start, end, options) {
+        for (var x = start; x <= end; x++) {
+            if (options == 'odd' && x % 2 != 0) {
+                document.write(x + ' ');
+                continue;
+            }
+            if (options == 'even' && x % 2 == 0){
+                document.write(x + ' ');
+                continue;
+            }
+            if (options == 'all'){
+                document.write(x + ' ');
+            }
+        }
+    }
+
+
+    printNumberWithOptions(1, 10, 'odd');
+    document.write('<br />');
+    printNumberWithOptions(1, 10, 'even');
+    document.write('<br />');
+    printNumberWithOptions(1, 10, 'all');
+
+
+
+</script>
