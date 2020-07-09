@@ -1,0 +1,17 @@
+<script>
+    function dropdownList() {
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        var str = '<select>';
+
+        for (var i = 0; i < months.length; i++) {
+            str += "<option value='" + months[i] + "'>" + months[i] + "<option>";
+        }
+
+        str += '</select>';
+
+        return str;
+    }
+
+    document.write(dropdownList());
+</script>
