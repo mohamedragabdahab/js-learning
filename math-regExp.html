@@ -1,0 +1,50 @@
+<script>
+    // Math
+
+    var x = Math.ceil(1.1);   // ceil
+    console.log(x);        // x = 2
+
+    var z = Math.floor(10.8); // floor
+    console.log(z);       // z = 10
+
+    var y = Math.round(10.1); // round
+    console.log(y);       // y = 10
+
+
+    var minNumber = Math.min(10, 20, 55, 965, 125, 2);  // min
+    console.log(minNumber); // 2
+
+    var maxNumber = Math.max(10, 20, 55, 965, 125, 2);  // max
+    console.log(maxNumber);  // 965
+
+    var randomNumber = Math.random();   // random
+    console.log(Math.floor(randomNumber * 2000)); // Output ==> random number between 0 and 2000
+
+
+    //  • regular expression •
+    // syntax  ==>  /pattern/attributes
+    /* // Attributes list :
+        g ==> Global
+        i ==> case insensitive
+        m ==> Multi line
+
+       // brackets[] use :
+        [...] Char
+        [^...] Not char
+        [a-e] Range(Letters) ==> from a to m  ( a, b, c, d, e, ...m )
+        [0-15] Range(Numbers) ==> from 0 to 15 ( 0, 1, 2, 3, ...15 )
+        [^0-10] Not range
+
+       // Quantifiers :
+       letter+ ==> Word contain one letter
+       letter{number} ==> Word contain number of letter
+       letter{number, another number} ==> Word contain number or another number
+
+
+     */
+    var string = "Hello from the another side";
+    var replaced = string.replace(/L{2}/gi, "@");
+    console.log(replaced);
+
+    
+</script>
