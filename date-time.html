@@ -1,13 +1,50 @@
 <script>
-    // Date and time
-     /*
-        new Date(); ==> print current Date & Time
-        new Date(Millseconds); ==> print millseconds from UTC 1 jan 1970 00:00:00   //Millseconds = 1000 second
-        new Date("DateString"); ==> new Date("April 10, 2000 12:50:00")
+    // •Date and time
+    /*
+     new Date(); ==> print current Date & Time
+     new Date(Milliseconds); ==> print milliseconds from UTC 1 jan 1970 00:00:00   //Milliseconds = 1000 second
+     new Date("DateString"); ==> new Date("April 10, 2000 12:50:00")
      */
 
     console.log(new Date());
     console.log(new Date(10000));
     console.log(new Date("April 10, 2000"));
+
+    //-----------------------------------------------------------------------------------------------
+
+    // •Date format  (Standard format)  ==> new Date("YYYY-MM-DD hh:mm:ss TZD")
+    /*
+     • Full format  ==> new Date("April 10, 2000 12:20:50") • with or without commas •
+     • Long format  ==> new Date("10 April 2000 12:20:50")
+     • short format ==> new Date(4/10/2000) • Month comes before day•  4 ==> Month   10 ==> Day
+     • Iso format (Standard format)  ==> new Date("YYYY-MM-DD hh:mm:ss TZD")  • TZD = time zone designator
+     */
+
+    //-----------------------------------------------------------------------------------------------
+
+    // •Date functions
+    /*
+     • getDate()       //Day of the month  1 : 31
+     • getDay()        //Day of the week  0 : 6
+     • getFullYear()   //the year
+     • getHours()      //the hours   0 : 23
+     • getMinutes()    //the minutes 0 : 59
+     • getSeconds()    //the seconds 0 : 59
+     */
+    var theDate = new Date(),
+            theDayOfTheMonth = theDate.getDate(),      //Day of the month
+            theDayOfTheWeek = theDate.getDay(),     //Day of the week
+            theYear = theDate.getFullYear(),        //the year
+            theHours = theDate.getHours(),          //the hours
+            theMinutes = theDate.getMinutes(),      //the minutes
+            theSeconds = theDate.getSeconds();      //the seconds
+
+    console.log(theDayOfTheMonth);
+    console.log(theDayOfTheWeek);
+    console.log(theYear);
+    console.log(theHours);
+    console.log(theMinutes);
+    console.log(theSeconds);
+
 
 </script>
