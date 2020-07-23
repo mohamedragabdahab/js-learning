@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown List</title>
+    <style>
+        select{
+            border-radius: 15%;
+            width: 100px;
+        }
+        .black{
+            background-color: black;
+            color: white;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .white{
+            background-color: white;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<form>
+    <p>Choose you fav color :</p>
+    <select name="fav-color" title="" id="colors" onclick="changeColor()">
+     <option id="red" value="red" class="red">Red</option>
+     <option id="black" value="black" class="black">Black</option>
+     <option id="green" value="green" class="green">Green</option>
+     <option id="yellow" value="yellow" class="yellow">Yellow</option>
+     <option id="white" value="white" class="white">White</option>
+    </select>
+
+</form>
+<script>
+    function changeColor () {
+        var color = document.getElementById("colors").value;
+        switch (color) {
+            case "red":
+                document.body.style.background = "red";
+                break;
+            case "black":
+                document.body.style.background = "black";
+                break;
+            case "green":
+                document.body.style.background = "green";
+                break;
+            case "yellow":
+                document.body.style.background = "yellow";
+                break;
+            case "white":
+                document.body.style.background = "white";
+                break;
+        }
+    }
+</script>
+</body>
+</html>
