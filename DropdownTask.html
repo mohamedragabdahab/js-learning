@@ -36,18 +36,19 @@
 <form>
     <p>Choose you fav color :</p>
     <select name="fav-color" title="" id="colors" onclick="changeColor()">
-     <option id="red" value="red" class="red">Red</option>
-     <option id="black" value="black" class="black">Black</option>
-     <option id="green" value="green" class="green">Green</option>
-     <option id="yellow" value="yellow" class="yellow">Yellow</option>
-     <option id="white" value="white" class="white">White</option>
+     <option value="red" class="red">Red</option>
+     <option value="black" class="black">Black</option>
+     <option value="green" class="green">Green</option>
+     <option value="yellow" class="yellow">Yellow</option>
+     <option value="white" class="white">White</option>
     </select>
 
 </form>
 <script>
     function changeColor () {
         var color = document.getElementById("colors").value;
-        switch (color) {
+       /*
+       switch (color) {
             case "red":
                 document.body.style.background = "red";
                 break;
@@ -63,7 +64,20 @@
             case "white":
                 document.body.style.background = "white";
                 break;
+      }
+      */
+        if(color== "red"){
+            document.body.style.background = "red";
+        }else if(color== "black"){
+            document.body.style.background = "black";
+        }else if(color=="green"){
+            document.body.style.background = "green";
+        }else if (color=="yellow"){
+            document.body.style.background = "yellow";
+        }else if (color=="white"){
+            document.body.style.background = "white";
         }
+
     }
 </script>
 </body>
