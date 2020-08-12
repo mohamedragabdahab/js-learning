@@ -4,26 +4,7 @@
     <meta charset="UTF-8">
     <title>Sign up</title>
     <link href="bootstrap.min.css" rel="stylesheet">
-    <style>
-        h2 {
-            margin-left: 5px;
-        }
-
-        .form-control {
-            width: 20%;
-            margin: 10px;
-        }
-
-        .btn-success {
-            margin: 10px;
-            margin-top: 5px;
-            width: 5%;
-        }
-
-        p {
-            margin-left: 5px;
-        }
-    </style>
+    <link href="signUpStyle.css" rel="stylesheet">
 </head>
 <body>
 <h2>Sign Up</h2>
@@ -36,7 +17,31 @@
            placeholder="Re-Enter Your password" required>
     <label>Gender :</label>
     <input type="radio" name="gender" value="Male" title="male">Male
-    <input type="radio" name="gender" value="Female" title="female">Female
+    <input type="radio" name="gender" value="Female" title="female">Female<br>
+    <p>Date Of Birth :</p>
+    <select title="" name="years">
+        <script>
+            for (var years = 1900; years <= 2020; years++) {
+                document.write("<option value= >" + years + "</option>")
+            }
+
+        </script>
+    </select>
+    <select title="" name="days">
+        <script>
+            for (var days = 1; days <= 31; days++) {
+                document.write("<option value= >" + days + "</option>")
+            }
+        </script>
+    </select>
+    <select title="">
+        <script>
+            var months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+            for (var i = 0; i < 12; i++) {
+                document.write("<option value= >" + months[i] + "</option>")
+            }
+        </script>
+    </select>
     <label style="display: block">Select you fav hobby :</label>
     <select name="fav" title="">
         <option value="football">Football</option>
