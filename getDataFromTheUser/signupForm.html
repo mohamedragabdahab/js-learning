@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="signUpStyle.css" rel="stylesheet">
+</head>
+<body>
+<h2>Sign Up</h2>
+<form>
+    <input type="text" title="username" name="username" class="form-control" placeholder="Enter your username" required>
+    <input type="email" title="email" name="email" class="form-control" placeholder="Enter your email" required>
+    <input type="password" title="password" name="password" class="form-control" placeholder="Enter your password"
+           required>
+    <input type="password" title="reEnterPassword" name="rePassword" class="form-control"
+           placeholder="Re-Enter Your password" required>
+    <label>Gender :</label>
+    <input type="radio" name="gender" value="Male" title="male">Male
+    <input type="radio" name="gender" value="Female" title="female">Female<br>
+    <p>Date Of Birth :</p>
+    <select title="" name="years">
+        <script>
+            for (var years = 1900; years <= 2020; years++) {
+                document.write("<option value= >" + years + "</option>")
+            }
+
+        </script>
+    </select>
+    <select title="" name="days">
+        <script>
+            for (var days = 1; days <= 31; days++) {
+                document.write("<option value= >" + days + "</option>")
+            }
+        </script>
+    </select>
+    <select title="">
+        <script>
+            var months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+            for (var i = 0; i < 12; i++) {
+                document.write("<option value= >" + months[i] + "</option>")
+            }
+        </script>
+    </select>
+    <label style="display: block">Select you fav hobby :</label>
+    <select name="fav" title="">
+        <option value="football">Football</option>
+        <option value="vollyball">Vollyball</option>
+        <option value="handball">Handball</option>
+        <option value="basketball">Basketball</option>
+    </select>
+    <input style="display: block" type="submit" value="Sign Up" title="" class="btn-success">
+    <p>already have an account? <a href="loginForm.html">Login</a></p>
+</form>
+</body>
+</html>
