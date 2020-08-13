@@ -54,3 +54,11 @@
 </form>
 </body>
 </html>
+
+
+
+
+<?php
+
+
+// write the code here to print the form submitted values
