@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>Sign Up</h2>
-<form name="" method="post" action="submit.php">
+<form name="registration" method="post" action="../submit.php">
     <input type="text" title="username" name="username" class="form-control" placeholder="Enter your username" >
     <input type="email" title="email" name="email" class="form-control" placeholder="Enter your email" >
     <input type="password" title="password" name="password" class="form-control" placeholder="Enter your password">

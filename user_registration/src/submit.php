@@ -1,18 +1,17 @@
 <?php
-
-$usr = $_GET['username'];
-$email = $_GET['email'];
-$pass = $_GET['password'];
-$rePass = $_GET['rePassword'];
-$gender = $_GET['gender'];
-$years = $_GET['years'];
-$days = $_GET['days'];
-$months = $_GET['months'];
-$fav1 = $_GET['fav1'];
-$fav2 = $_GET['fav2'];
-$fav3 = $_GET['fav3'];
-$fav4 = $_GET['fav4'];
-$fav5 = $_GET['fav5'];
+$usr = $_POST['username'];
+$email = $_POST['email'];
+$pass = $_POST['password'];
+$rePass = $_POST['rePassword'];
+$gender = $_POST['gender'];
+$years = $_POST['years'];
+$days = $_POST['days'];
+$months = $_POST['months'];
+$fav1 = $_POST['fav1'];
+$fav2 = $_POST['fav2'];
+$fav3 = $_POST['fav3'];
+$fav4 = $_POST['fav4'];
+$fav5 = $_POST['fav5'];
 echo "<b>Username : </b>" . $usr . "<br>" .
     "<b>Email :</b>" . $email . "<br>" .
     "<b>Password :</b>" . $pass . "<br>" .
